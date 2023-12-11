@@ -1,0 +1,119 @@
+.titlu {
+  color: white;
+  margin: 2em;
+  text-align: center;
+}
+
+.evenimente {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 100%;
+    height: auto;
+    padding: 2em;
+}
+
+.evenimente .eveniment {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 40%;
+    height: 50vh;
+    padding: 2em;
+    color: gold;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 20px; 
+    flex-wrap: wrap;
+}
+
+.eveniment:nth-child(1) {
+  background-image: 
+  linear-gradient(
+    rgba(0, 0, 0, 0.6),
+    rgba(0, 0, 0, 0.6)
+  ),
+  url("../imagini/evenimente_imagini/cursuri.jpg");
+}
+
+.eveniment:nth-child(2) {
+  background-image: 
+  linear-gradient(
+    rgba(0, 0, 0, 0.6),
+    rgba(0, 0, 0, 0.6)
+  ),
+  url("../imagini/evenimente_imagini/craciun.jpg");
+}
+
+.eveniment:nth-child(3) {
+  background-image: 
+  linear-gradient(
+    rgba(0, 0, 0, 0.6),
+    rgba(0, 0, 0, 0.6)
+  ),
+  url("../imagini/evenimente_imagini/birthday.jpg");
+}
+
+.eveniment:nth-child(4) {
+  background-image: 
+  linear-gradient(
+    rgba(0, 0, 0, 0.6),
+    rgba(0, 0, 0, 0.6)
+  ),
+  url("../imagini/evenimente_imagini/concert.jpg");
+}
+
+.eveniment:nth-child(5) {
+  background-image: 
+  linear-gradient(
+    rgba(0, 0, 0, 0.6),
+    rgba(0, 0, 0, 0.6)
+  ),
+  url("../imagini/evenimente_imagini/tasting.jpg");
+}
+
+.eveniment:nth-child(6) {
+  background-image: 
+  linear-gradient(
+    rgba(0, 0, 0, 0.6),
+    rgba(0, 0, 0, 0.6)
+  ),
+  url("../imagini/evenimente_imagini/happyhour.jpg");
+}
+
+.eveniment:nth-child(7) {
+  background-image: 
+  linear-gradient(
+    rgba(0, 0, 0, 0.6),
+    rgba(0, 0, 0, 0.6)
+  ),
+  url("../imagini/evenimente_imagini/masterclass.jpg");
+}
+
+.eveniment:nth-child(8) {
+  background-image: 
+  linear-gradient(
+    rgba(0, 0, 0, 0.6),
+    rgba(0, 0, 0, 0.6)
+  ),
+  url("../imagini/evenimente_imagini/kidsday.jpg");
+}
+
+.evenimente .eveniment p {
+  font-size: 20px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .evenimente {
+    flex-direction: column;
+  }
+  .evenimente .eveniment {
+    width: 100%;
+    align-items: center;
+    gap: 0;
+  }
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/nav.css">
+    <link rel="stylesheet" href="./styles/footer.css">
+    <link rel="stylesheet" href="./styles/default.css">
+    <link rel="stylesheet" href="./styles/cariera.css">
+    <title>Cariera</title>
+</head>
+<body>
+    <nav>
+        <div class="logo">La Comaniuc</div>
+        <ul>
+          <li>
+            <a href="./index.html">Acasa</a>
+          </li>
+          <li>
+            <a href="./cariera.html">Cariera</a>
+          </li>
+          <li>
+            <a href="./evenimente.html">Evenimente</a>
+          </li>
+          <li>
+            <a href="#">Galerie</a>
+          </li>
+        </ul>
+        <div class="burger">
+          <div class="line line1"></div>
+          <div class="line line2"></div>
+          <div class="line line3"></div>
+        </div>
+      </nav>
+
+      <h2>Aplicare pentru Post de Munca</h2>
+      <p>Va rugam completati randurile de mai jos pentru a putea aplica pentru un post de munca</p>
+    
+      <form method="POST">
+        <label for="full_name">Nume:</label>
+        <input type="text" id="full_name" name="full_name" required>
+    
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+    
+        <label for="phone">Telefon:</label>
+        <input type="tel" id="phone" name="phone" required>
+    
+        <label for="address">Adresa:</label>
+        <textarea id="address" name="address" rows="3" required></textarea>
+    
+        <label for="position">Pozitia Pentru Care Aplicati:</label>
+        <input type="text" id="position" name="position" required>
+    
+        <label for="resume">Incarcati CV (PDF, DOC, DOCX):</label>
+        <input type="file" id="resume" name="resume" accept=".pdf, .doc, .docx" required>
+        
+        <button type="submit">Trimiteti Aplicatia</button>
+      </form>
+      <footer>
+        <div class="companie footer__div">
+          <h1>Companie</h1>
+          <p>Cariera</p>
+          <p>Feedback</p>
+          <p>Contacte</p>
+        </div>
+        <div class="servicii footer__div">
+          <h1>Servicii</h1>
+          <p>Conditii Si Reguli</p>
+          <p>Gift Card</p>
+          <p>Clienti Corporativi</p>
+          <p>Evenimente pentru Copii</p>
+          <p>Banchete</p>
+        </div>
+        <div class="livrare footer__div">
+          <h1>Livrare</h1>
+          <p>Chisinau</p>
+          <p>Hincesti</p>
+          <p>Mingir</p>
+        </div>
+      </footer>
+<script src="./scripts/nav.js"></script>
+</body>
+</html>

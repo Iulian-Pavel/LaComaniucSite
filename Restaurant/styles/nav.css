@@ -1,0 +1,119 @@
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: 0;
+  font-family: "Poppins", sans-serif;
+  padding: 2em;
+  height: 0;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  background-color: rgb(27,26,27)
+}
+
+nav .logo {
+  color: white;
+}
+
+.qty {
+  color: white;
+  border: 1px solid red;
+  background-color: red;
+  border-radius: 50%;
+}
+
+.cart {
+  display: flex;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: 0;
+  width: 30%;
+}
+nav ul li {
+  list-style: none;
+}
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+nav ul li a::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 1.6px;
+  background: #fff;
+  transition: width 300ms;
+}
+
+nav ul li a:hover::after {
+  width: 100%;
+}
+
+nav .burger {
+  height: 2.4em;
+  display: none;
+  width: 50px;
+  cursor: pointer;
+}
+
+nav .burger .line {
+  border: 1px solid white;
+  width: 50px;
+  height: 5px;
+  border-radius: 15px;
+  transition: 0.3s ease-in-out;
+}
+
+nav .burger:hover .line {
+  width: 50px;
+  transition: 0.3s ease-in-out;
+}
+
+nav .burger .line2 {
+  width: 40px;
+}
+
+nav .burger .line3 {
+  width: 30px;
+}
+
+nav .cart {
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 1000px) {
+  nav {
+    transition: 0.3s ease-in-out;
+  }
+  nav ul {
+    display: none;
+  }
+  nav .burger {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  nav.nav-responsive {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    flex-flow: column-reverse;
+    height: 100vh;
+    transition: 0.3s ease-in-out;
+  }
+  nav.nav-responsive ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    height: 50%;
+  }
+}
